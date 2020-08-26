@@ -1,0 +1,5 @@
+<NodeAgentConfig> 
+    <MulticastAddress   value="239.192.0.0" />
+    <MulticastPort      value="4000" />
+    <XmlRpcServerPort   value="8082" />
+</NodeAgentConfig> 

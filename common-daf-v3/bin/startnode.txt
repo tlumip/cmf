@@ -1,0 +1,8 @@
+set classpath=Z:\myfiles\subversion\cmf\common-base\build\classes;Z:\myfiles\subversion\cmf\common-daf-v3\build\classes;Z:\myfiles\subversion\cmf\common-daf-v3\config;Z:\myfiles\subversion\cmf\common-daf-v3\lib\commons-codec-1.3.jar;Z:\myfiles\subversion\cmf\common-daf-v3\lib\xmlrpc-2.0.jar;Z:\myfiles\subversion\cmf\common-daf-v3\lib\groovy-all-1.0-jsr-03.jar;Z:\myfiles\subversion\third-party\logging-log4j-1.2.9\log4j-1.2.9.jar
+
+java
+com.pb.common.rpc.DafNode
+-node
+node0
+-config
+../config/testapp.groovy

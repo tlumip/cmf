@@ -1,0 +1,21 @@
+<Version value="1"/>
+
+<NodeList>
+  <node name="node1" IPAddress="239.192.0.0" Port="4000" Protocol="http"/>
+  <node name="node2" IPAddress="239.192.0.0" Port="4000" Protocol="http"/>
+</NodeList>
+
+<ActiveNodes>
+  <nodes="node1, node2">
+  or
+  <nodes="2Node-Cluster">
+</ActiveNodes>
+
+<1Node-Cluster> 
+  <list="node1"/>
+</1Node-Cluster> 
+
+<2Node-Cluster> 
+  <list="node1,node2"/>
+</2Node-Cluster> 
+

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<methodCall>
+    <methodName>math.abs</methodName>
+    <params>
+        <param>
+            <value>
+                <int>-98</int>
+            </value>
+        </param>
+    </params>
+</methodCall>

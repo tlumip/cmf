@@ -1,0 +1,6 @@
+#Wed Jan 31 19:12:04 PST 2007
+cdt.managedbuild.config.gnu.cygwin.exe.release.718187625/internalBuilder/enabled=false
+cdt.managedbuild.config.gnu.cygwin.exe.release.718187625/internalBuilder/ignoreErr=true
+eclipse.preferences.version=1
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.cygwin.exe.release.718187625=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<environment>\r\n<variable name\="CPLUS_INCLUDE_PATH" operation\="remove"/>\r\n<variable name\="CPATH" operation\="remove"/>\r\n<variable name\="C_INCLUDE_PATH" operation\="remove"/>\r\n</environment>\r\n
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.cygwin.exe.release.718187625=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<environment>\r\n<variable name\="LIBRARY_PATH" operation\="remove"/>\r\n</environment>\r\n

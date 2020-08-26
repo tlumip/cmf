@@ -1,0 +1,7 @@
+<ControllerConfig> 
+    <MulticastAddress  value="239.192.0.0" />
+    <MulticastPort     value="4000" />
+    <XmlRpcServerPort  value="8081" />
+    <WWWContentRoot    value="/MyFiles/subversion/cmf/common-daf-v3/wwwroot"/>
+    <WWWServerPort     value="8080" />
+</ControllerConfig> 

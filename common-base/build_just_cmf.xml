@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<project name="common-base" default="release" basedir=".">
+
+    <!-- Compile -->
+    <target name="build">
+        <javac srcdir="src/java"
+            destdir="build/classes" 
+            includes="**/*" 
+            debug="on"
+            optimize="off" 
+            deprecation="off">
+            <classpath refid="compile.classpath"/>
+        </javac>
+    </target>
+
+    <!-- Make a jar file with all classes and zip files combined -->
+    <target name="makejar" depends="build">
+    
+        <mkdir dir="release"/>
+        <delete file="release/${ant.project.name}.jar"/>
+    
+        <jar update="true" destfile="release/${ant.project.name}.jar">
+            <fileset dir="build/classes"/>
+        </jar>
+    </target>
+
+    <!-- ********************************************************* -->
+    <!-- Setup the classpath -->
+    <path id="compile.classpath">
+    	
+    	<fileset dir="${basedir}">
+          <include name="lib/dx.jar"/>
+          <include name="lib/dxml.jar"/>
+          <include name="lib/jds.jar"/>
+          <include name="lib/mysql-connector-java-3.0.10-stable-bin.jar"/>
+          <include name="lib/or124.jar"/>
+          <include name="lib/xml4j.jar"/>
+          <include name="lib/junit-4.1.jar"/>
+          <include name="lib/javadbf-0.4.0.jar"/>
+          <include name="lib/cajo.jar"/>
+          <include name="lib/crowbar.jar"/>
+          <include name="lib/jna-4.0.0.jar"/>
+          <include name="lib/jna-platform-4.0.0.jar"/>
+          <include name="lib/jxl.jar"/>
+          <include name="lib/log4j-1.2.9.jar"/>
+          <include name="lib/omx.jar"/>
+          <include name="lib/transcadMatrix.jar"/>
+    	</fileset>
+
+    </path>
+
+    <!-- ********************************************************* -->
+    <!-- Create a set of jar files for release -->
+    <target name="release" depends="makejar">
+		
+        <zip destfile="release/common-base2.jar">
+          <zipgroupfileset includes="common-base.jar" dir="release"/>
+        	
+		  <zipgroupfileset includes="dx.jar" dir="lib"/>
+		  <zipgroupfileset includes="dxml.jar" dir="lib"/>
+		  <zipgroupfileset includes="jds.jar" dir="lib"/>
+		  <zipgroupfileset includes="mysql-connector-java-3.0.10-stable-bin.jar" dir="lib"/>
+		  <zipgroupfileset includes="or124.jar" dir="lib"/>
+		  <zipgroupfileset includes="xml4j.jar" dir="lib"/>
+		  <zipgroupfileset includes="junit-4.1.jar" dir="lib"/>
+		  <zipgroupfileset includes="javadbf-0.4.0.jar" dir="lib"/>
+		  <zipgroupfileset includes="cajo.jar" dir="lib"/>
+		  <zipgroupfileset includes="crowbar.jar" dir="lib"/>
+		  <zipgroupfileset includes="jna-4.0.0.jar" dir="lib"/>
+		  <zipgroupfileset includes="jna-platform-4.0.0.jar" dir="lib"/>
+		  <zipgroupfileset includes="jxl.jar" dir="lib"/>
+		  <zipgroupfileset includes="VoyagerFileAPI-1.3.1.zip" dir="lib"/>
+        </zip>
+        <move file="release/common-base2.jar" tofile="release/common-base.jar"/>
+
+    </target>
+
+</project>

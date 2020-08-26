@@ -1,0 +1,6 @@
+<Version value="1"/>
+
+<HandlerList>
+  <handler class="com.pb.common.rpc.tests.SampleHandler" nodes="node1,node2"/>
+  <handler class="com.pb.common.rpc.tests.TransportHandler" nodes="node2"/>
+</HandlerList>

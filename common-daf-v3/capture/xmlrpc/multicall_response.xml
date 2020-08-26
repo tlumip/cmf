@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<methodResponse>
+    <fault>
+        <value>
+            <struct>
+                <member>
+                    <name>faultString</name>
+                    <value>java.lang.ClassCastException:&#32;java.util.Hashtable</value>
+                </member>
+                <member>
+                    <name>faultCode</name>
+                    <value>
+                        <int>0</int>
+                    </value>
+                </member>
+            </struct>
+        </value>
+    </fault>
+</methodResponse>
