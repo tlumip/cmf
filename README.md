@@ -1,1 +1,1 @@
-See https://github.com/tlumip/tlumip/wiki/build
+See https://github.com/tlumip/cmf/blob/master/common-base/README.MD and See https://github.com/tlumip/tlumip/wiki/build
